@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sebastian Sanchez | Analista de Datos & BI</title>
+<meta name="description" content="Portafolio de Sebastian Sanchez: SQL, Tableau, Power BI y automatización de reportes.">
+<style>
+:root{--bg:#0e1116;--panel:#161b22;--line:#262d38;--ink:#e8ecf1;--soft:#9aa5b4;--acc:#3ddc97;--acc2:#5aa9ff}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+body.en .es,body:not(.en) .en{display:none}
+header{position:sticky;top:0;background:rgba(14,17,22,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;align-items:center;gap:22px;height:60px}
+.brand{font-weight:700;letter-spacing:.14em;font-size:14px;margin-right:auto}
+.brand b{color:var(--acc)}
+nav a.l{color:var(--soft);font-size:14px}
+nav a.l:hover{color:var(--ink)}
+#lang{background:none;border:1px solid var(--line);color:var(--soft);border-radius:6px;padding:4px 10px;font:inherit;font-size:13px;cursor:pointer}
+#lang:hover{color:var(--ink);border-color:var(--soft)}
+.hero{padding:96px 24px 80px}
+.tag{font:600 12px/1 ui-monospace,Consolas,monospace;letter-spacing:.16em;color:var(--acc);text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,50px);line-height:1.15;margin:18px 0 20px;max-width:17em;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--acc)}
+.lead{color:var(--soft);max-width:44em;font-size:18px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{padding:11px 20px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid var(--line)}
+.btn.p{background:var(--acc);color:#06281a;border-color:var(--acc)}
+.btn:hover{filter:brightness(1.12)}
+.nums{display:flex;gap:40px;flex-wrap:wrap;margin-top:56px;padding-top:28px;border-top:1px solid var(--line)}
+.nums b{display:block;font-size:26px}
+.nums span{color:var(--soft);font-size:14px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:10px 0 32px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{font-size:17px;margin-bottom:12px}
+.card ul{list-style:none;padding:0;color:var(--soft);font-size:15px}
+.card li{padding:5px 0 5px 16px;position:relative}
+.card li:before{content:"";position:absolute;left:0;top:14px;width:6px;height:6px;border-radius:50%;background:var(--acc2)}
+.proj{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+.proj .card{display:flex;flex-direction:column}
+.proj p{color:var(--soft);font-size:15px;margin-bottom:16px}
+.proj h3{font-size:19px;margin:10px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.chips span{font:12px ui-monospace,Consolas,monospace;border:1px solid var(--line);border-radius:20px;padding:3px 10px;color:var(--soft)}
+.more{margin-top:auto;color:var(--acc);font-weight:600;font-size:15px}
+.more:hover{text-decoration:underline}
+.contact{text-align:center}
+.contact p{color:var(--soft);max-width:36em;margin:0 auto}
+.contact .btns{justify-content:center}
+footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--soft);font-size:14px}
+@media(max-width:600px){nav a.l{display:none}.hero{padding:64px 24px 56px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#">SEBASTIAN <b>SANCHEZ</b></a>
+  <a class="l" href="#perfil"><span class="es">Perfil</span><span class="en">Profile</span></a>
+  <a class="l" href="#skills"><span class="es">Habilidades</span><span class="en">Skills</span></a>
+  <a class="l" href="#proyectos"><span class="es">Proyectos</span><span class="en">Projects</span></a>
+  <a class="l" href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
+  <button id="lang" type="button" aria-label="Cambiar idioma / Switch language">EN</button>
+</nav></div></header>
+
+<main>
+<div class="wrap hero" id="perfil">
+  <div class="tag">Data Analytics &amp; Business Intelligence</div>
+  <h1 class="es">Convierto datos comerciales en <em>tableros en los que el negocio puede confiar</em>.</h1>
+  <h1 class="en">I turn commercial data into <em>dashboards the business can trust</em>.</h1>
+  <p class="lead es">Soy analista de datos en Montería, Colombia. Trabajo para una operación de venta directa en Colombia, Perú y Ecuador: escribo el SQL, construyo los tableros en Tableau y automatizo los reportes que antes se hacían a mano.</p>
+  <p class="lead en">I'm a data analyst based in Montería, Colombia. I work for a direct-sales operation across Colombia, Peru and Ecuador: I write the SQL, build the Tableau dashboards and automate reports that used to be done by hand.</p>
+  <div class="btns">
+    <a class="btn p" href="#proyectos"><span class="es">Ver proyectos</span><span class="en">View projects</span></a>
+    <a class="btn" href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
+  </div>
+  <div class="nums">
+    <div><b>3</b><span class="es">países en un mismo modelo de datos</span><span class="en">countries in one data model</span></div>
+    <div><b>SQL · Tableau · Power BI</b><span class="es">del dato crudo al tablero</span><span class="en">from raw data to dashboard</span></div>
+    <div><b>2026</b><span class="es">Especialización en Análisis de Datos</span><span class="en">Postgraduate degree in Data Analysis</span></div>
+  </div>
+</div>
+
+<section id="skills"><div class="wrap">
+  <div class="tag"><span class="es">Qué sé hacer</span><span class="en">What I do</span></div>
+  <h2><span class="es">Competencias y habilidades</span><span class="en">Skills</span></h2>
+  <div class="grid">
+    <div class="card"><h3>SQL <span class="es">y modelado de datos</span><span class="en">&amp; data modeling</span></h3><ul>
+      <li><span class="es">CTEs y funciones de ventana</span><span class="en">CTEs and window functions</span></li>
+      <li><span class="es">Deduplicación y unión de fuentes distintas</span><span class="en">Deduplication and merging mismatched sources</span></li>
+      <li>Databricks SQL, DuckDB</li>
+      <li><span class="es">Pruebas de calidad de datos</span><span class="en">Data quality tests</span></li></ul></div>
+    <div class="card"><h3>Business Intelligence</h3><ul>
+      <li>Tableau Desktop, Cloud <span class="es">y</span><span class="en">and</span> Prep</li>
+      <li><span class="es">Expresiones LOD y cálculos de tabla</span><span class="en">LOD expressions and table calculations</span></li>
+      <li>Power BI: Power Query, DAX</li>
+      <li><span class="es">Definición de KPIs comerciales</span><span class="en">Commercial KPI definition</span></li></ul></div>
+    <div class="card"><h3><span class="es">Automatización</span><span class="en">Automation</span></h3><ul>
+      <li>Google Apps Script</li>
+      <li><span class="es">Excel avanzado y tableros autoactualizables</span><span class="en">Advanced Excel and self-updating dashboards</span></li>
+      <li>Python: pandas, openpyxl</li>
+      <li><span class="es">Consolidación de archivos recurrentes</span><span class="en">Recurring file consolidation</span></li></ul></div>
+    <div class="card"><h3><span class="es">Análisis y marketing</span><span class="en">Analysis &amp; marketing</span></h3><ul>
+      <li><span class="es">Segmentación RFM</span><span class="en">RFM segmentation</span></li>
+      <li><span class="es">Cohortes y retención</span><span class="en">Cohorts and retention</span></li>
+      <li><span class="es">Reportería multipaís y multimoneda</span><span class="en">Multi-country, multi-currency reporting</span></li>
+      <li>Git <span class="es">y</span><span class="en">and</span> GitHub</li></ul></div>
+  </div>
+</div></section>
+
+<section id="proyectos"><div class="wrap">
+  <div class="tag"><span class="es">Trabajo demostrable</span><span class="en">Selected work</span></div>
+  <h2><span class="es">Portafolio de proyectos</span><span class="en">Projects</span></h2>
+  <div class="grid proj">
+    <div class="card"><div class="tag">SQL · Analytics Engineering</div>
+      <h3><span class="es">Pipeline SQL de venta directa multipaís</span><span class="en">Multi-country direct-sales SQL pipeline</span></h3>
+      <p class="es">De datos crudos con duplicados y esquemas distintos por país a KPIs por sector y ciclo en una moneda común. Siete pruebas de calidad verifican el resultado.</p>
+      <p class="en">From raw data with duplicates and per-country schemas to KPIs by sector and cycle in a common currency. Seven data quality tests verify the output.</p>
+      <div class="chips"><span>SQL</span><span>DuckDB</span><span>Python</span><span>Data quality</span></div>
+      <a class="more" href="https://github.com/SSANCHEZ904/sql-venta-directa-analytics" target="_blank" rel="noopener"><span class="es">Ver repositorio →</span><span class="en">View repository →</span></a></div>
+    <div class="card"><div class="tag">Tableau · Power BI</div>
+      <h3><span class="es">Patrones de cálculo para tableros</span><span class="en">Dashboard calculation patterns</span></h3>
+      <p class="es">Ocho problemas frecuentes en tableros comerciales y su solución con LOD y cálculos de tabla, más un modelo estrella con cinco medidas DAX.</p>
+      <p class="en">Eight recurring problems in commercial dashboards solved with LOD and table calculations, plus a star schema with five DAX measures.</p>
+      <div class="chips"><span>Tableau</span><span>LOD</span><span>Power BI</span><span>DAX</span></div>
+      <a class="more" href="https://github.com/SSANCHEZ904/bi-dashboards-tableau-powerbi" target="_blank" rel="noopener"><span class="es">Ver repositorio →</span><span class="en">View repository →</span></a></div>
+    <div class="card"><div class="tag"><span class="es">Automatización</span><span class="en">Automation</span></div>
+      <h3><span class="es">Reportes que se actualizan solos</span><span class="en">Reports that update themselves</span></h3>
+      <p class="es">Un script que consolida los Excel de una carpeta de Drive en una tabla maestra para BI, y un tablero de Excel que se recalcula al pegar datos nuevos.</p>
+      <p class="en">A script that consolidates Excel files from a Drive folder into a master table for BI, and an Excel dashboard that recalculates when new data is pasted.</p>
+      <div class="chips"><span>Apps Script</span><span>Excel</span><span>Python</span><span>openpyxl</span></div>
+      <a class="more" href="https://github.com/SSANCHEZ904/automatizacion-reportes" target="_blank" rel="noopener"><span class="es">Ver repositorio →</span><span class="en">View repository →</span></a></div>
+    <div class="card"><div class="tag">Marketing Analytics</div>
+      <h3><span class="es">Segmentación RFM y retención por canal</span><span class="en">RFM segmentation and channel retention</span></h3>
+      <p class="es">En datos de ejemplo, un tercio de los clientes genera la mitad del ingreso, y el canal que más clientes trae es el que menos retiene.</p>
+      <p class="en">On sample data, a third of customers generate half the revenue, and the channel that brings the most customers retains the fewest.</p>
+      <div class="chips"><span>Python</span><span>pandas</span><span>RFM</span><span>Cohortes</span></div>
+      <a class="more" href="https://github.com/SSANCHEZ904/marketing-analytics-rfm-cohortes" target="_blank" rel="noopener"><span class="es">Ver repositorio →</span><span class="en">View repository →</span></a></div>
+  </div>
+</div></section>
+
+<section id="contacto" class="contact"><div class="wrap">
+  <div class="tag"><span class="es">Hablemos</span><span class="en">Let's talk</span></div>
+  <h2><span class="es">Contacto</span><span class="en">Contact</span></h2>
+  <p class="es">¿Buscas un analista de datos para tu equipo o tienes un proyecto de reportería? Escríbeme.</p>
+  <p class="en">Looking for a data analyst for your team, or have a reporting project? Get in touch.</p>
+  <div class="btns">
+    <a class="btn p" href="https://wa.me/573013546516" target="_blank" rel="noopener">WhatsApp · +57 301 354 6516</a>
+    <a class="btn" href="https://www.linkedin.com/in/sebastiandsm/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/SSANCHEZ904" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Sebastian Sanchez · <span class="es">Los proyectos usan datos sintéticos</span><span class="en">Projects use synthetic data</span></div></footer>
+
+<script>
+const b=document.getElementById('lang');
+b.addEventListener('click',()=>{const en=document.body.classList.toggle('en');b.textContent=en?'ES':'EN';document.documentElement.lang=en?'en':'es';});
+</script>
+</body>
+</html>
