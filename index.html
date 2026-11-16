@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sebastian Sanchez | Analista de Datos & BI</title>
-<meta name="description" content="Portafolio de Sebastian Sanchez: SQL, Tableau, Power BI y automatización de reportes.">
+<meta name="description" content="Portafolio de Sebastian Sanchez: Tableau, Power BI, SQL, Python y automatización de reportes.">
 <style>
 :root{--bg:#0e1116;--panel:#161b22;--line:#262d38;--ink:#e8ecf1;--soft:#9aa5b4;--acc:#3ddc97;--acc2:#5aa9ff}
 *{box-sizing:border-box;margin:0}
@@ -41,19 +41,27 @@ h2{font-size:28px;margin:10px 0 32px}
 .card ul{list-style:none;padding:0;color:var(--soft);font-size:15px}
 .card li{padding:5px 0 5px 16px;position:relative}
 .card li:before{content:"";position:absolute;left:0;top:14px;width:6px;height:6px;border-radius:50%;background:var(--acc2)}
-.proj{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+.proj{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
 .proj .card{display:flex;flex-direction:column}
-.proj p{color:var(--soft);font-size:15px;margin-bottom:16px}
+.proj p{color:var(--soft);font-size:15px;margin-bottom:18px}
 .proj h3{font-size:19px;margin:10px 0}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
 .chips span{font:12px ui-monospace,Consolas,monospace;border:1px solid var(--line);border-radius:20px;padding:3px 10px;color:var(--soft)}
-.more{margin-top:auto;color:var(--acc);font-weight:600;font-size:15px}
-.more:hover{text-decoration:underline}
+.job{display:grid;grid-template-columns:190px 1fr;gap:8px 28px;padding:26px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .when{color:var(--acc);font:13px ui-monospace,Consolas,monospace;padding-top:4px}
+.job h3{font-size:19px}
+.job h3 small{color:var(--soft);font-weight:400;font-size:16px}
+.job ul{color:var(--soft);font-size:15px;padding-left:18px;margin-top:10px}
+.job li{padding:3px 0}
+.edu{margin-top:40px}
+.edu b{display:block;font-size:16px}
+.edu span{color:var(--soft);font-size:14px}
 .contact{text-align:center}
 .contact p{color:var(--soft);max-width:36em;margin:0 auto}
 .contact .btns{justify-content:center}
 footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--soft);font-size:14px}
-@media(max-width:600px){nav a.l{display:none}.hero{padding:64px 24px 56px}}
+@media(max-width:700px){nav a.l{display:none}.job{grid-template-columns:1fr}.hero{padding:64px 24px 56px}}
 </style>
 </head>
 <body>
@@ -61,6 +69,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
   <a class="brand" href="#">SEBASTIAN <b>SANCHEZ</b></a>
   <a class="l" href="#perfil"><span class="es">Perfil</span><span class="en">Profile</span></a>
   <a class="l" href="#skills"><span class="es">Habilidades</span><span class="en">Skills</span></a>
+  <a class="l" href="#experiencia"><span class="es">Experiencia</span><span class="en">Experience</span></a>
   <a class="l" href="#proyectos"><span class="es">Proyectos</span><span class="en">Projects</span></a>
   <a class="l" href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
   <button id="lang" type="button" aria-label="Cambiar idioma / Switch language">EN</button>
@@ -71,16 +80,16 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
   <div class="tag">Data Analytics &amp; Business Intelligence</div>
   <h1 class="es">Convierto datos comerciales en <em>tableros en los que el negocio puede confiar</em>.</h1>
   <h1 class="en">I turn commercial data into <em>dashboards the business can trust</em>.</h1>
-  <p class="lead es">Soy analista de datos en Montería, Colombia. Trabajo para una operación de venta directa en Colombia, Perú y Ecuador: escribo el SQL, construyo los tableros en Tableau y automatizo los reportes que antes se hacían a mano.</p>
-  <p class="lead en">I'm a data analyst based in Montería, Colombia. I work for a direct-sales operation across Colombia, Peru and Ecuador: I write the SQL, build the Tableau dashboards and automate reports that used to be done by hand.</p>
+  <p class="lead es">Soy ingeniero industrial y especialista en análisis de datos, en Montería, Colombia. Desde 2023 construyo tableros, consultas SQL y automatizaciones para equipos comerciales; hoy lo hago para una operación de venta directa en Colombia, Perú y Ecuador.</p>
+  <p class="lead en">I'm an industrial engineer and data analysis specialist based in Montería, Colombia. Since 2023 I've built dashboards, SQL queries and automations for commercial teams; today I do it for a direct-sales operation across Colombia, Peru and Ecuador.</p>
   <div class="btns">
     <a class="btn p" href="#proyectos"><span class="es">Ver proyectos</span><span class="en">View projects</span></a>
     <a class="btn" href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
   </div>
   <div class="nums">
+    <div><b>2023</b><span class="es">año desde el que trabajo con datos</span><span class="en">working with data since</span></div>
     <div><b>3</b><span class="es">países en un mismo modelo de datos</span><span class="en">countries in one data model</span></div>
-    <div><b>SQL · Tableau · Power BI</b><span class="es">del dato crudo al tablero</span><span class="en">from raw data to dashboard</span></div>
-    <div><b>2026</b><span class="es">Especialización en Análisis de Datos</span><span class="en">Postgraduate degree in Data Analysis</span></div>
+    <div><b>Tableau · Power BI · SQL · Python</b><span class="es">del dato crudo al tablero</span><span class="en">from raw data to dashboard</span></div>
   </div>
 </div>
 
@@ -88,57 +97,98 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
   <div class="tag"><span class="es">Qué sé hacer</span><span class="en">What I do</span></div>
   <h2><span class="es">Competencias y habilidades</span><span class="en">Skills</span></h2>
   <div class="grid">
-    <div class="card"><h3>SQL <span class="es">y modelado de datos</span><span class="en">&amp; data modeling</span></h3><ul>
+    <div class="card"><h3>SQL <span class="es">y bases de datos</span><span class="en">&amp; databases</span></h3><ul>
+      <li>Databricks SQL, SQL Server, MySQL</li>
       <li><span class="es">CTEs y funciones de ventana</span><span class="en">CTEs and window functions</span></li>
-      <li><span class="es">Deduplicación y unión de fuentes distintas</span><span class="en">Deduplication and merging mismatched sources</span></li>
-      <li>Databricks SQL, DuckDB</li>
-      <li><span class="es">Pruebas de calidad de datos</span><span class="en">Data quality tests</span></li></ul></div>
+      <li><span class="es">Unión de fuentes con esquemas distintos</span><span class="en">Merging sources with different schemas</span></li>
+      <li><span class="es">Pruebas de calidad de datos</span><span class="en">Data quality tests</span></li>
+    </ul></div>
     <div class="card"><h3>Business Intelligence</h3><ul>
       <li>Tableau Desktop, Cloud <span class="es">y</span><span class="en">and</span> Prep</li>
       <li><span class="es">Expresiones LOD y cálculos de tabla</span><span class="en">LOD expressions and table calculations</span></li>
-      <li>Power BI: Power Query, DAX</li>
-      <li><span class="es">Definición de KPIs comerciales</span><span class="en">Commercial KPI definition</span></li></ul></div>
-    <div class="card"><h3><span class="es">Automatización</span><span class="en">Automation</span></h3><ul>
-      <li>Google Apps Script</li>
-      <li><span class="es">Excel avanzado y tableros autoactualizables</span><span class="en">Advanced Excel and self-updating dashboards</span></li>
-      <li>Python: pandas, openpyxl</li>
-      <li><span class="es">Consolidación de archivos recurrentes</span><span class="en">Recurring file consolidation</span></li></ul></div>
-    <div class="card"><h3><span class="es">Análisis y marketing</span><span class="en">Analysis &amp; marketing</span></h3><ul>
-      <li><span class="es">Segmentación RFM</span><span class="en">RFM segmentation</span></li>
-      <li><span class="es">Cohortes y retención</span><span class="en">Cohorts and retention</span></li>
-      <li><span class="es">Reportería multipaís y multimoneda</span><span class="en">Multi-country, multi-currency reporting</span></li>
-      <li>Git <span class="es">y</span><span class="en">and</span> GitHub</li></ul></div>
+      <li>Power BI: DAX, Power Query</li>
+      <li><span class="es">Definición de KPIs comerciales</span><span class="en">Commercial KPI definition</span></li>
+    </ul></div>
+    <div class="card"><h3>Python <span class="es">y</span><span class="en">&amp;</span> machine learning</h3><ul>
+      <li>Pandas, NumPy, Matplotlib</li>
+      <li>Scikit-learn</li>
+      <li><span class="es">Modelos predictivos y de clustering</span><span class="en">Predictive and clustering models</span></li>
+      <li><span class="es">Limpieza y análisis exploratorio</span><span class="en">Data cleaning and exploratory analysis</span></li>
+    </ul></div>
+    <div class="card"><h3><span class="es">Automatización e IA</span><span class="en">Automation &amp; AI</span></h3><ul>
+      <li><span class="es">Integración CRM (Dynamics 365) → Power BI</span><span class="en">CRM (Dynamics 365) → Power BI integration</span></li>
+      <li>Google Apps Script, Excel <span class="es">avanzado</span><span class="en">(advanced)</span></li>
+      <li><span class="es">IA generativa: ChatGPT y Claude</span><span class="en">Generative AI: ChatGPT and Claude</span></li>
+      <li><span class="es">Agentes y copilots en flujos de datos</span><span class="en">Agents and copilots in data workflows</span></li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="experiencia"><div class="wrap">
+  <div class="tag"><span class="es">Trayectoria</span><span class="en">Career</span></div>
+  <h2><span class="es">Experiencia</span><span class="en">Experience</span></h2>
+  <div class="job"><div class="when"><span class="es">Jul 2025 – Actualidad</span><span class="en">Jul 2025 – Present</span></div><div>
+    <h3><span class="es">Analista de Datos</span><span class="en">Data Analyst</span> <small>· Scitis Group</small></h3>
+    <ul>
+      <li><span class="es">Desarrollo tableros interactivos en Tableau para el seguimiento de indicadores comerciales en tres países.</span><span class="en">I build interactive Tableau dashboards to track commercial indicators across three countries.</span></li>
+      <li><span class="es">Integro y proceso datos en Databricks con SQL para alimentar análisis y reportes.</span><span class="en">I integrate and process data in Databricks with SQL to feed analyses and reports.</span></li>
+      <li><span class="es">Automatizo la ingesta y transformación de datos para ganar tiempo y calidad en los análisis.</span><span class="en">I automate data ingestion and transformation to improve turnaround and quality.</span></li>
+    </ul></div></div>
+  <div class="job"><div class="when"><span class="es">Sep 2023 – Jul 2025</span><span class="en">Sep 2023 – Jul 2025</span></div><div>
+    <h3><span class="es">Analista de Datos</span><span class="en">Data Analyst</span> <small>· Editorial Santillana</small></h3>
+    <ul>
+      <li><span class="es">Extraje y analicé datos de cotizaciones e indicadores clave desde el CRM Microsoft Dynamics 365.</span><span class="en">Extracted and analyzed quotation data and key indicators from the Microsoft Dynamics 365 CRM.</span></li>
+      <li><span class="es">Automaticé la integración del CRM con Power BI, lo que redujo tiempos de entrega y mejoró la precisión.</span><span class="en">Automated the CRM-to-Power BI integration, cutting delivery times and improving accuracy.</span></li>
+      <li><span class="es">Construí informes interactivos a la medida de cada área solicitante.</span><span class="en">Built interactive reports tailored to each requesting department.</span></li>
+    </ul></div></div>
+  <div class="job"><div class="when"><span class="es">Ene 2023 – Dic 2023</span><span class="en">Jan 2023 – Dec 2023</span></div><div>
+    <h3>Data Analyst <small>· Freelance</small></h3>
+    <ul>
+      <li><span class="es">Ejecuté proyectos de análisis de principio a fin en ventas y meteorología: recolección, limpieza, visualización y presentación.</span><span class="en">Delivered end-to-end analysis projects in sales and meteorology: collection, cleaning, visualization and presentation.</span></li>
+      <li><span class="es">Desarrollé dashboards en Power BI y modelos de clustering en Python.</span><span class="en">Built Power BI dashboards and clustering models in Python.</span></li>
+    </ul></div></div>
+  <div class="grid edu">
+    <div><b><span class="es">Especialista en Análisis de Datos</span><span class="en">Specialist in Data Analysis</span></b><span>Corporación Unificada Nacional de Educación Superior · 2026</span></div>
+    <div><b><span class="es">Ingeniero Industrial</span><span class="en">Industrial Engineer</span></b><span>Universidad de Córdoba · 2022</span></div>
+    <div><b><span class="es">Diplomado en Sistema Integrado de Gestión</span><span class="en">Diploma in Integrated Management Systems</span></b><span>Universidad de Córdoba · 2021</span></div>
+    <div><b><span class="es">Inglés B2</span><span class="en">English B2</span></b><span><span class="es">Intermedio</span><span class="en">Intermediate</span></span></div>
   </div>
 </div></section>
 
 <section id="proyectos"><div class="wrap">
-  <div class="tag"><span class="es">Trabajo demostrable</span><span class="en">Selected work</span></div>
-  <h2><span class="es">Portafolio de proyectos</span><span class="en">Projects</span></h2>
+  <div class="tag"><span class="es">Trabajos realizados</span><span class="en">Selected work</span></div>
+  <h2><span class="es">Proyectos</span><span class="en">Projects</span></h2>
   <div class="grid proj">
-    <div class="card"><div class="tag">SQL · Analytics Engineering</div>
-      <h3><span class="es">Pipeline SQL de venta directa multipaís</span><span class="en">Multi-country direct-sales SQL pipeline</span></h3>
-      <p class="es">De datos crudos con duplicados y esquemas distintos por país a KPIs por sector y ciclo en una moneda común. Siete pruebas de calidad verifican el resultado.</p>
-      <p class="en">From raw data with duplicates and per-country schemas to KPIs by sector and cycle in a common currency. Seven data quality tests verify the output.</p>
-      <div class="chips"><span>SQL</span><span>DuckDB</span><span>Python</span><span>Data quality</span></div>
-      <a class="more" href="https://github.com/SSANCHEZ904/sql-venta-directa-analytics" target="_blank" rel="noopener"><span class="es">Ver repositorio →</span><span class="en">View repository →</span></a></div>
-    <div class="card"><div class="tag">Tableau · Power BI</div>
-      <h3><span class="es">Patrones de cálculo para tableros</span><span class="en">Dashboard calculation patterns</span></h3>
-      <p class="es">Ocho problemas frecuentes en tableros comerciales y su solución con LOD y cálculos de tabla, más un modelo estrella con cinco medidas DAX.</p>
-      <p class="en">Eight recurring problems in commercial dashboards solved with LOD and table calculations, plus a star schema with five DAX measures.</p>
-      <div class="chips"><span>Tableau</span><span>LOD</span><span>Power BI</span><span>DAX</span></div>
-      <a class="more" href="https://github.com/SSANCHEZ904/bi-dashboards-tableau-powerbi" target="_blank" rel="noopener"><span class="es">Ver repositorio →</span><span class="en">View repository →</span></a></div>
+    <div class="card"><div class="tag">Tableau</div>
+      <h3><span class="es">Tableros comerciales para tres países</span><span class="en">Commercial dashboards for three countries</span></h3>
+      <p class="es">Rankings de desempeño de la fuerza de ventas, seguimiento de inicios y actividad de clientes, y tendencia consolidada de indicadores, con reglas de medición distintas por país y conversión de moneda.</p>
+      <p class="en">Sales-force performance rankings, customer start and activity tracking, and consolidated indicator trends, with country-specific measurement rules and currency conversion.</p>
+      <div class="chips"><span>Tableau</span><span>LOD</span><span>KPIs</span></div></div>
+    <div class="card"><div class="tag">SQL · Databricks</div>
+      <h3><span class="es">Un solo modelo de datos multipaís</span><span class="en">A single multi-country data model</span></h3>
+      <p class="es">Consultas que unifican fuentes con esquemas distintos por país, eliminan duplicados, completan datos faltantes con fuentes de respaldo y entregan KPIs por sector y periodo en una moneda común.</p>
+      <p class="en">Queries that unify sources with different schemas per country, remove duplicates, fill gaps from fallback sources and deliver KPIs by sector and period in a common currency.</p>
+      <div class="chips"><span>SQL</span><span>Databricks</span><span>Data quality</span></div></div>
+    <div class="card"><div class="tag">Power BI · CRM</div>
+      <h3><span class="es">Integración automática de CRM a Power BI</span><span class="en">Automated CRM-to-Power BI integration</span></h3>
+      <p class="es">Flujo automatizado que lleva las cotizaciones y otros indicadores desde Microsoft Dynamics 365 hasta informes interactivos en Power BI, a la medida de cada área.</p>
+      <p class="en">An automated flow that takes quotations and other indicators from Microsoft Dynamics 365 into interactive Power BI reports tailored to each department.</p>
+      <div class="chips"><span>Power BI</span><span>Dynamics 365</span><span>DAX</span></div></div>
     <div class="card"><div class="tag"><span class="es">Automatización</span><span class="en">Automation</span></div>
       <h3><span class="es">Reportes que se actualizan solos</span><span class="en">Reports that update themselves</span></h3>
-      <p class="es">Un script que consolida los Excel de una carpeta de Drive en una tabla maestra para BI, y un tablero de Excel que se recalcula al pegar datos nuevos.</p>
-      <p class="en">A script that consolidates Excel files from a Drive folder into a master table for BI, and an Excel dashboard that recalculates when new data is pasted.</p>
-      <div class="chips"><span>Apps Script</span><span>Excel</span><span>Python</span><span>openpyxl</span></div>
-      <a class="more" href="https://github.com/SSANCHEZ904/automatizacion-reportes" target="_blank" rel="noopener"><span class="es">Ver repositorio →</span><span class="en">View repository →</span></a></div>
-    <div class="card"><div class="tag">Marketing Analytics</div>
-      <h3><span class="es">Segmentación RFM y retención por canal</span><span class="en">RFM segmentation and channel retention</span></h3>
-      <p class="es">En datos de ejemplo, un tercio de los clientes genera la mitad del ingreso, y el canal que más clientes trae es el que menos retiene.</p>
-      <p class="en">On sample data, a third of customers generate half the revenue, and the channel that brings the most customers retains the fewest.</p>
-      <div class="chips"><span>Python</span><span>pandas</span><span>RFM</span><span>Cohortes</span></div>
-      <a class="more" href="https://github.com/SSANCHEZ904/marketing-analytics-rfm-cohortes" target="_blank" rel="noopener"><span class="es">Ver repositorio →</span><span class="en">View repository →</span></a></div>
+      <p class="es">Un script que consolida los Excel que llegan cada periodo en una tabla maestra para BI, y tableros de Excel que se recalculan al pegar datos nuevos, sin arrastrar fórmulas.</p>
+      <p class="en">A script that consolidates the Excel files arriving each period into a master table for BI, and Excel dashboards that recalculate when new data is pasted, with no formula dragging.</p>
+      <div class="chips"><span>Apps Script</span><span>Excel</span><span>Python</span></div></div>
+    <div class="card"><div class="tag">Machine learning</div>
+      <h3><span class="es">Clustering de datos sísmicos en Colombia</span><span class="en">Clustering seismic data in Colombia</span></h3>
+      <p class="es">Análisis de datos meteorológicos relacionados con sismos y modelos de clustering para identificar patrones en el territorio colombiano.</p>
+      <p class="en">Analysis of meteorological data related to earthquakes, with clustering models to identify patterns across Colombia.</p>
+      <div class="chips"><span>Python</span><span>Scikit-learn</span><span>Pandas</span></div></div>
+    <div class="card"><div class="tag">Power BI</div>
+      <h3><span class="es">Dashboards de ventas y denuncias</span><span class="en">Sales and complaints dashboards</span></h3>
+      <p class="es">Tableros interactivos para monitorear ventas y denuncias, con comparativos históricos anuales para identificar tendencias.</p>
+      <p class="en">Interactive dashboards to monitor sales and complaints, with year-over-year comparisons to spot trends.</p>
+      <div class="chips"><span>Power BI</span><span>MySQL</span><span>Excel</span></div></div>
   </div>
 </div></section>
 
@@ -150,12 +200,11 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
   <div class="btns">
     <a class="btn p" href="https://wa.me/573013546516" target="_blank" rel="noopener">WhatsApp · +57 301 354 6516</a>
     <a class="btn" href="https://www.linkedin.com/in/sebastiandsm/" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="https://github.com/SSANCHEZ904" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></section>
 </main>
 
-<footer><div class="wrap">© 2026 Sebastian Sanchez · <span class="es">Los proyectos usan datos sintéticos</span><span class="en">Projects use synthetic data</span></div></footer>
+<footer><div class="wrap">© 2026 Sebastian Sanchez · <span class="es">Analítica de datos y Business Intelligence</span><span class="en">Data Analytics and Business Intelligence</span></div></footer>
 
 <script>
 const b=document.getElementById('lang');
